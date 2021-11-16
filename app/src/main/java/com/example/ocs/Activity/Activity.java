@@ -1,6 +1,7 @@
 package com.example.ocs.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.Color;
@@ -11,7 +12,11 @@ import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.TextView;
 
+import com.example.ocs.Adapter.CategoryAdapter;
+import com.example.ocs.Domain.CategoryDomain;
 import com.example.ocs.R;
+
+import java.util.ArrayList;
 
 public class Activity extends AppCompatActivity {
 
@@ -69,6 +74,18 @@ public class Activity extends AppCompatActivity {
     }
 
     private void drinksRV() {
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        drinksRV = findViewById(R.id.drinks);
+        drinksRV.setLayoutManager(linearLayoutManager);
+
+        ArrayList<CategoryDomain> categorylist = new ArrayList<>();
+        categorylist.add(new CategoryDomain("Pizza", "cat_1"));
+        categorylist.add(new CategoryDomain("Pizza", "cat_2"));
+        categorylist.add(new CategoryDomain("Pizza", "cat_3"));
+        categorylist.add(new CategoryDomain("Pizza", "cat_4"));
+
+        adapter = new CategoryAdapter(categorylist);
+        drinksRV.setAdapter(adapter);
 
     }
 
