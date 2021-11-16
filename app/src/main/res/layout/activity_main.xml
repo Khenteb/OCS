@@ -37,10 +37,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                    app:layout_constraintTop_toBottomOf="@+id/categoryViews" />
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/categoryViews"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
@@ -126,7 +126,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/dailyItems"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -148,7 +148,17 @@
                     android:paddingEnd="22dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                    app:layout_constraintTop_toBottomOf="@+id/dailyItems" />
+
+                <Button
+                    android:id="@+id/logoutbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="32dp"
+                    android:text="Logout"
+                    app:layout_constraintStart_toEndOf="@+id/textView4"
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>

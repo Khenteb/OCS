@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/signUpbtn"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/vector_ek10" />
 
@@ -39,27 +39,13 @@
         android:background="@drawable/round_border"
         android:ems="10"
         android:hint="Email"
-        android:inputType="textPersonName"
-        android:paddingLeft="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.422"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Username" />
-
-    <EditText
-        android:id="@+id/Username"
-        android:layout_width="340dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/round_border"
-        android:ems="10"
-        android:hint="User Name"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:paddingLeft="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.422"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputName" />
+
 
     <EditText
         android:id="@+id/inputName"
@@ -85,7 +71,7 @@
         android:background="@drawable/round_border"
         android:ems="10"
         android:hint="Confirm password"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         android:paddingLeft="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.422"
@@ -93,7 +79,7 @@
         app:layout_constraintTop_toBottomOf="@+id/password_E" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/signUpbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -121,7 +107,7 @@
         android:background="@drawable/round_border"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:paddingLeft="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.422"
@@ -140,7 +126,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.316"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/signUpbtn"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -156,7 +142,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toEndOf="@+id/alreadyhaveAccount"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/signUpbtn"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView

@@ -1,27 +1,20 @@
 package com.example.ocs.Domain;
 
-import java.io.Serializable;
-
-public class FoodDomain implements Serializable {
+public class FoodDomain {
     private String title;
     private String pic;
-    private String description;
     private Double fee;
-    private int numberInCard;
+    private String star;
+    private int time;
+    private int calories;
 
-    public FoodDomain(String title, String pic, String description, Double fee) {
+    public FoodDomain(String title, String pic, Double fee, String  star, int time, int calories) {
         this.title = title;
         this.pic = pic;
-        this.description = description;
         this.fee = fee;
-    }
-
-    public FoodDomain(String title, String pic, String description, Double fee, int numberInCard) {
-        this.title = title;
-        this.pic = pic;
-        this.description = description;
-        this.fee = fee;
-        this.numberInCard = numberInCard;
+        this.star = star;
+        this.time = time;
+        this.calories = calories;
     }
 
     public String getTitle() {
@@ -40,14 +33,6 @@ public class FoodDomain implements Serializable {
         this.pic = pic;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public Double getFee() {
         return fee;
     }
@@ -56,11 +41,30 @@ public class FoodDomain implements Serializable {
         this.fee = fee;
     }
 
-    public int getNumberInCard() {
-        return numberInCard;
+    public String getStar() {
+        return star;
     }
 
-    public void setNumberInCard(int numberInCard) {
-        this.numberInCard = numberInCard;
+    public void setStar(String star) {
+        this.star = star;
     }
+
+    public int getTime() {
+        return time;
+    }
+
+    public void setTime(int time) {
+        this.time = time;
+    }
+
+    public int getCalories() {
+        return calories;
+    }
+
+    public void setCalories(int calories) {
+        this.calories = calories;
+    }
+
+
+
 }

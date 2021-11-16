@@ -53,24 +53,24 @@
         android:shadowDy="2"
         android:background="@drawable/solid_border"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
     <EditText
-        android:id="@+id/user_name"
+        android:id="@+id/login_email"
         android:layout_width="340dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/round_border"
         android:ems="10"
-        android:hint="User Name"
-        android:inputType="textPersonName"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
         android:paddingLeft="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/login_password"
         android:layout_width="340dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
@@ -81,7 +81,7 @@
         android:hint="Password"
         android:paddingLeft="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_name" />
+        app:layout_constraintTop_toBottomOf="@+id/login_email" />
 
     <TextView
         android:id="@+id/textView2"

@@ -1,6 +1,7 @@
 package com.example.ocs.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -17,6 +18,11 @@ public class Activity extends AppCompatActivity {
     public TextView tabItem1, tabItem2, tabItem3, tabItem4;
     private int selectedTabNumber=1;
 
+    private RecyclerView.Adapter adapter;
+    private  RecyclerView drinksRV;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +34,8 @@ public class Activity extends AppCompatActivity {
         tabItem4=findViewById(R.id.tabItem4);
 
         //selecting first fragment by default
-        getSupportFragmentManager().beginTransaction().setReorderingAllowed(true).replace(R.id.fragmentContainer, DrinksFragment.class, null). commit();
+        getSupportFragmentManager().beginTransaction().setReorderingAllowed(true).
+                replace(R.id.fragmentContainer, DrinksFragment.class, null). commit();
 
         tabItem1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +64,12 @@ public class Activity extends AppCompatActivity {
                 selectTab(4);
             }
         });
+
+        drinksRV();
+    }
+
+    private void drinksRV() {
+
     }
 
     private void selectTab(int tabNumber){
